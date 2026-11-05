@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b4fb3"><title>Field Attendance</title>
+<style>
+:root{--navy:#0b3a8c;--blue:#1565d8;--lblue:#e8f0fe;--green:#1e8e3e;--amber:#b7791f;--red:#c62828;--bg:#f2f6fc;--card:#fff;--tx:#17212f;--mut:#5b6675}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,Roboto,Arial,sans-serif;background:var(--bg);color:var(--tx);padding-bottom:env(safe-area-inset-bottom)}
+header{background:linear-gradient(135deg,var(--navy),var(--blue));color:#fff;padding:calc(14px + env(safe-area-inset-top)) 16px 14px;display:flex;justify-content:space-between;align-items:center}
+header b{font-size:18px}main{padding:16px;max-width:560px;margin:0 auto}main.pad{padding-bottom:84px}
+.card{background:var(--card);border-radius:14px;padding:16px;margin-bottom:14px;box-shadow:0 1px 4px rgba(11,58,140,.10)}
+label{display:block;font-size:13px;color:var(--mut);margin:10px 0 4px}input,select{width:100%;font-size:16px;padding:12px;border:1px solid #c3cfe2;border-radius:10px;background:#fff;color:var(--tx)}
+button{font-size:17px;font-weight:600;border:0;border-radius:12px;padding:15px;width:100%;margin-top:12px;color:#fff;background:var(--blue)}
+button.big{padding:26px;font-size:21px}button.green{background:var(--green)}button.red{background:var(--red)}button.ghost{background:var(--lblue);color:var(--navy)}button.sm{padding:9px 12px;font-size:14px;width:auto;margin:6px 6px 0 0}button:disabled{opacity:.5}
+.banner{padding:12px 14px;border-radius:10px;font-size:14px;margin-bottom:14px}.ok{background:#e3f4e8;color:#14532d}.warn{background:#fff4d6;color:#7a4b00}.bad{background:#fde6e6;color:#8a1c1c}.info{background:var(--lblue);color:var(--navy)}
+.row{display:flex;justify-content:space-between;gap:8px;padding:6px 0;font-size:15px}.row span:first-child{color:var(--mut)}
+.hist{border-top:1px solid #e5e9f0;padding:10px 0;font-size:14px}.hist:first-child{border-top:0}
+img.thumb{width:100%;border-radius:10px;margin-top:8px}a{color:var(--blue)}.hidden{display:none}.small{font-size:12px;color:var(--mut)}
+.timer{font-size:34px;font-weight:700;text-align:center;margin:6px 0;color:var(--navy)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.stat{background:#fff;border-radius:12px;padding:14px;box-shadow:0 1px 4px rgba(11,58,140,.10)}.stat b{display:block;font-size:26px;color:var(--navy)}.stat span{font-size:12px;color:var(--mut)}
+.chip{display:inline-block;font-size:12px;padding:3px 8px;border-radius:20px;background:var(--lblue);color:var(--navy);margin-left:6px}.chip.Active,.chip.Trial{background:#e3f4e8;color:#14532d}.chip.Suspended,.chip.Revoked,.chip.Inactive,.chip.Expired{background:#fde6e6;color:#8a1c1c}
+nav{position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid #d5deed;display:flex;padding-bottom:env(safe-area-inset-bottom);z-index:5}
+nav button{margin:0;border-radius:0;background:none;color:var(--mut);font-size:11px;padding:10px 2px;flex:1;font-weight:600}nav button.on{color:var(--blue);box-shadow:inset 0 3px 0 var(--blue)}nav button i{display:block;font-style:normal;font-size:20px}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.72);z-index:9;display:flex;align-items:center;justify-content:center;padding:16px}.modal .box{background:#fff;border-radius:14px;padding:14px;max-width:520px;width:100%;max-height:92vh;overflow:auto}
+.sec{font-size:13px;font-weight:700;color:var(--navy);margin:14px 0 4px;text-transform:uppercase;letter-spacing:.04em}
+</style></head>
+<body>
+<header><b id="hdr">Field Attendance</b><span id="who" class="small" style="color:#d6e4ff"></span></header>
+<main id="app"></main><div id="nav"></div>
+<script src="config.js"></script><script src="xlsx.bundle.js"></script><script src="excel.js"></script><script src="app.js"></script>
+</body></html>

@@ -1,0 +1,11 @@
+{
+  "appId": "com.fieldattendance.app",
+  "appName": "Field Attendance",
+  "webDir": "www",
+  "server": {
+    "androidScheme": "https"
+  },
+  "android": {
+    "allowMixedContent": false
+  }
+}

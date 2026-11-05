@@ -1,0 +1,25 @@
+{
+  "name": "field-attendance-app",
+  "version": "3.0.0",
+  "private": true,
+  "description": "Field Engineer Attendance - Android app (Capacitor) writing to a Google Sheet via Apps Script",
+  "scripts": {
+    "test": "node --test tests/backend.test.js tests/excel.test.js tests/bridge.test.js tests/e2e.test.js",
+    "icons": "npx @capacitor/assets generate --android --assetPath assets"
+  },
+  "dependencies": {
+    "@capacitor/android": "^6.1.2",
+    "@capacitor/browser": "^6.0.6",
+    "@capacitor/camera": "^6.0.2",
+    "@capacitor/cli": "^6.1.2",
+    "@capacitor/core": "^6.1.2",
+    "@capacitor/filesystem": "^6.0.4",
+    "@capacitor/geolocation": "^6.0.1",
+    "@capacitor/share": "^6.0.4",
+    "xlsx-js-style": "^1.2.0"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "^3.0.5",
+    "jsdom": "^24.1.3"
+  }
+}
